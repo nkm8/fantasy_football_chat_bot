@@ -5,30 +5,33 @@ services:
     build:
       context: .
     restart: always
-    #environment:
+    environment:
       #Bot ID from the GroupMe developers page (REQUIRED IF USING GROUPME)
       # BOT_ID: "1"
       #Webhook URL from the Slack App page (REQUIRED IF USING SLACK)
       # SLACK_WEBHOOK_URL: "1"
       #This is your Webhook URL from the Discord Settings page (REQUIRED IF USING DISCORD)
-      # DISCORD_WEBHOOK_URL: "1"
+      DISCORD_WEBHOOK_URL: ${DISCORD_WEBHOOK_URL}
       #ESPN league id (REQUIRED)
-      # LEAGUE_ID:
+      LEAGUE_ID: ${LEAGUE_ID}
       # #When the bot will start paying attention and sending messages to your chat.
-      # START_DATE:
+      START_DATE: ${START_DATE}
       # #When the bot will stop paying attention and stop sending messages to your chat.
-      # END_DATE:
+      END_DATE: ${END_DATE}
       # #ESPN League year
-      # LEAGUE_YEAR:
+      LEAGUE_YEAR: ${LEAGUE_YEAR}
       # #The timezone that the messages will look to send in. (America/New_York by default)
-      # TIMEZONE:
+      TIMEZONE: ${TIMEZONE}
       # #The message that the bot will say when it is started (can be blank for no message)
-      # INIT_MSG:
+      INIT_MSG: ${INIT_MSG}
       # #If set to True, when standings are posted on Wednesday it will also include top half scoring wins
-      # TOP_HALF_SCORING:
+      TOP_HALF_SCORING: ${TOP_HALF_SCORING}
       # #If set to True, when matchups are posted on Tuesday it will also include a random phrase
-      # RANDOM_PHRASE:
+      RANDOM_PHRASE: ${RANDOM_PHRASE}
+      MONITOR_REPORT: ${MONITOR_REPORT}
+      WAIVER_REPORT: ${WAIVER_REPORT}
+      DAILY_WAIVER: ${DAILY_WAIVER}
       # #Used for private leagues. See Private Leagues Section for documentation
-      # ESPN_S2:
+      ESPN_S2: ${ESPN_S2}
       # #Used for private leagues. See Private Leagues Section for documentation
-      # SWID:
+      SWID: ${SWID}

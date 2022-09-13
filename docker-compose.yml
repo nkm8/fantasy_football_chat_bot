@@ -5,7 +5,7 @@ services:
     build:
       context: .
     restart: always
-    environment:
+    #environment:
       #Bot ID from the GroupMe developers page (REQUIRED IF USING GROUPME)
       # BOT_ID: "1"
       #Webhook URL from the Slack App page (REQUIRED IF USING SLACK)

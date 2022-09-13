@@ -7,13 +7,13 @@ services:
     restart: always
     environment:
       #Bot ID from the GroupMe developers page (REQUIRED IF USING GROUPME)
-      BOT_ID: "1"
+      # BOT_ID: "1"
       #Webhook URL from the Slack App page (REQUIRED IF USING SLACK)
-      SLACK_WEBHOOK_URL: "1"
+      # SLACK_WEBHOOK_URL: "1"
       #This is your Webhook URL from the Discord Settings page (REQUIRED IF USING DISCORD)
-      DISCORD_WEBHOOK_URL: "1"
+      # DISCORD_WEBHOOK_URL: "1"
       #ESPN league id (REQUIRED)
-      LEAGUE_ID:
+      # LEAGUE_ID:
       # #When the bot will start paying attention and sending messages to your chat.
       # START_DATE:
       # #When the bot will stop paying attention and stop sending messages to your chat.
